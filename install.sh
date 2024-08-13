@@ -2,9 +2,11 @@ chmod 600 ~/.ssh/id_rsa
 
 sudo pacman -S --needed base-devel
 
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-makepkg -si
+# git clone https://aur.archlinux.org/yay-bin.git ~/yay-bin
+# cd ~/yay-bin
+# makepkg -si
+
+# cd ~/dots
 
 mkdir -p ~/.local/share/icons
 
