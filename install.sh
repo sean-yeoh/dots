@@ -23,7 +23,8 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
 
 yay -S --needed google-chrome slack-desktop code spotify-launcher flameshot \
   gnome-extensions-cli kooha hivemind-bin libmagick6 graphicsmagick pass \
-  kitty zsh git-delta vlc docker docker-compose wireguard-tools
+  kitty zsh git-delta vlc docker docker-compose wireguard-tools asdf-vm \
+  python gcc python-pip rust libffi libyaml openssl zlib openssl xz tk 
 
 if [[ $SHELL != *"zsh"* ]]; then
   chsh -s $(which zsh)
@@ -41,3 +42,5 @@ cp ./config/gitconfig ~/.gitconfig
 cp ./config/tool-versions ~/.tool-versions
 
 sudo systemctl enable docker.service
+
+asdf install
