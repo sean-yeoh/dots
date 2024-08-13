@@ -16,5 +16,6 @@ gsettings set org.gnome.desktop.interface icon-theme 'Reversal-blue-dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
 
 yay -S -needed google-chrome slack-desktop code spotify-launcher flameshot \
-  gnome-extensions-cli kooha hivemind-bin libmagick6 graphicsmagick pass
+  gnome-extensions-cli kooha hivemind-bin libmagick6 graphicsmagick pass \
+  kitty
 
