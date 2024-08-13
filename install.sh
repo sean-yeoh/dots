@@ -43,4 +43,5 @@ cp ./config/tool-versions ~/.tool-versions
 
 sudo systemctl enable docker.service
 
+cat ~/.tool-versions | cut -d' ' -f1 | grep "^[^\#]" | xargs -i asdf plugin add  {}
 asdf install
