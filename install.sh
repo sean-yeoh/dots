@@ -7,7 +7,6 @@ sudo pacman -S --needed base-devel
 # git clone https://aur.archlinux.org/yay-bin.git ~/yay-bin
 # cd ~/yay-bin
 # makepkg -si
-
 # cd ~/dots
 
 mkdir -p ~/.local/share/icons
@@ -24,7 +23,7 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
 
 yay -S --needed google-chrome slack-desktop code spotify-launcher flameshot \
   gnome-extensions-cli kooha hivemind-bin libmagick6 graphicsmagick pass \
-  kitty zsh git-delta
+  kitty zsh git-delta vlc docker docker-compose wireguard-tools
 
 if [[ $SHELL != *"zsh"* ]]; then
   chsh -s $(which zsh)
@@ -39,3 +38,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 sudo cp ./scripts/flameshot-workaround /usr/bin/
 
 cp ./config/gitconfig ~/.gitconfig
+cp ./config/tool-versions ~/.tool-versions
+
+sudo systemctl enable docker.service
