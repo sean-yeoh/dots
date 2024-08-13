@@ -24,7 +24,7 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
 
 yay -S --needed google-chrome slack-desktop code spotify-launcher flameshot \
   gnome-extensions-cli kooha hivemind-bin libmagick6 graphicsmagick pass \
-  kitty zsh
+  kitty zsh git-delta
 
 if [[ $SHELL != *"zsh"* ]]; then
   chsh -s $(which zsh)
@@ -34,6 +34,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
 sudo cp ./scripts/flameshot-workaround /usr/bin/
+
+cp ./config/gitconfig ~/.gitconfig
