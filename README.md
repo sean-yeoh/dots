@@ -109,6 +109,3 @@ umount -R /mnt
 nmcli device wifi connect <SSID> password <password> # connect to wifi
 timedatectl set-ntp true # start time synchronization service
 ```
-
-
-## References

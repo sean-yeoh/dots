@@ -1,4 +1,2 @@
-git clone https://aur.archlinux.org/yay-bin.git ~/yay-bin
-cd ~/yay-bin
-makepkg -si
-cd ~/dots
+yay -S --needed --noconfirm slack-desktop visual-studio-code-bin spotify-launcher flameshot \
+  gnome-extensions-cli kooha vlc
