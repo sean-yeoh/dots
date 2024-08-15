@@ -8,3 +8,5 @@ cp ./assets/fonts/* ~/.local/share/fonts/
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Reversal-blue-dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
+
+gtk-update-icon-cache ~/.local/share/icons/Reversal-blue-dark
