@@ -14,7 +14,7 @@ mkdir -p ~/.local/share/fonts
 
 cp -r ./assets/Reversal-blue-dark ~/.local/share/icons/
 cp -r ./assets/Bibata-Modern-Ice ~/.local/share/icons/
-cp -r ./assets/fonts/* ~/.local/share/fonts/
+cp ./assets/fonts/* ~/.local/share/fonts/
 fc-cache
 
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
@@ -24,7 +24,11 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
 yay -S --needed google-chrome slack-desktop code spotify-launcher flameshot \
   gnome-extensions-cli kooha hivemind-bin libmagick6 graphicsmagick pass \
   kitty zsh git-delta vlc docker docker-compose wireguard-tools asdf-vm \
-  python gcc python-pip rust libffi libyaml openssl zlib openssl xz tk 
+  python gcc python-pip rust libffi libyaml openssl zlib openssl xz tk \
+  adobe-source-han-sans-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts \
+  adobe-source-han-sans-otc-fonts adobe-source-han-sans-tw-fonts adobe-source-han-serif-cn-fonts \
+  adobe-source-han-serif-jp-fonts adobe-source-han-serif-kr-fonts adobe-source-han-serif-otc-fonts \
+  adobe-source-han-serif-tw-fonts
 
 if [[ $SHELL != *"zsh"* ]]; then
   chsh -s $(which zsh)
