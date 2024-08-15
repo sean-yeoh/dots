@@ -1,6 +1,6 @@
 gsettings set org.gnome.shell favorite-apps "[]"
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-gsettings set org.gnome.desktop.interface icon-theme 'Reversal-blue-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Reversal-dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
 gsettings set org.gnome.desktop.interface font-name 'Noto Sans 11'
 gsettings set org.gnome.desktop.interface document-font-name 'Noto Sans 11'
@@ -20,6 +20,11 @@ gsettings set org.gnome.mutter center-new-windows true
 
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
+gsettings set org.gnome.shell.keybindings switch-to-application-1 "@as []"
+gsettings set org.gnome.shell.keybindings switch-to-application-2 "@as []"
+gsettings set org.gnome.shell.keybindings switch-to-application-3 "@as []"
+gsettings set org.gnome.shell.keybindings switch-to-application-4 "@as []"
+
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Shift><Super>1']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Shift><Super>2']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Shift><Super>3']"
@@ -29,6 +34,13 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>3']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>4']"
+
+gsettings set org.gnome.shell.keybindings switch-to-application-1 "['<Alt>1']"
+gsettings set org.gnome.shell.keybindings switch-to-application-2 "['<Alt>2']"
+gsettings set org.gnome.shell.keybindings switch-to-application-3 "['<Alt>3']"
+gsettings set org.gnome.shell.keybindings switch-to-application-4 "['<Alt>4']"
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'kitty'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'kitty'
