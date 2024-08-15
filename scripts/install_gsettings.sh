@@ -12,7 +12,8 @@ gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.session idle-delay 'uint32 900'
 gsettings set org.gnome.desktop.interface clock-format '12h'
-gsettings set org.gtk.settings.file-chooser clock-format '12h'
+gsettings set org.gtk.Settings.FileChooser clock-format '12h'
+gsettings set org.gtk.gtk4.Settings.FileChooser clock-format '12h'
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.datetime automatic-timezone true
 
@@ -24,11 +25,6 @@ gsettings set org.gnome.shell.keybindings switch-to-application-1 "@as []"
 gsettings set org.gnome.shell.keybindings switch-to-application-2 "@as []"
 gsettings set org.gnome.shell.keybindings switch-to-application-3 "@as []"
 gsettings set org.gnome.shell.keybindings switch-to-application-4 "@as []"
-
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Shift><Super>1']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Shift><Super>2']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Shift><Super>3']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Shift><Super>4']"
 
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
