@@ -1,2 +1,2 @@
 yay -S --needed --noconfirm google-chrome slack-desktop visual-studio-code-bin spotify-launcher flameshot \
-  gnome-extensions-cli kooha vlc
+  gnome-extensions-cli kooha vlc shotwell
