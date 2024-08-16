@@ -1,4 +1,4 @@
-source ./vars
+source ./install/vars
 
 gsettings set org.gnome.shell favorite-apps "[]"
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
