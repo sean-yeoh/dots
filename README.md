@@ -102,10 +102,17 @@ grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable NetworkManager
 exit # exit from chroot
 umount -R /mnt
+reboot
 ```
 
-### 15. 
+### 15. Login and setup
 ```shell
 nmcli device wifi connect <SSID> password <password> # connect to wifi
 timedatectl set-ntp true # start time synchronization service
 ```
+
+### 16. Brightness not working (optional)
+Add `acpi_backlight=native` to kernel parameter.
+
+# References
+- https://wiki.archlinux.org/title/Backlight
