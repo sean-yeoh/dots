@@ -4,3 +4,4 @@ source ~/.zshrc
 
 cat ~/.tool-versions | cut -d' ' -f1 | grep "^[^\#]" | xargs -i asdf plugin add  {}
 asdf install
+asdf reshim
