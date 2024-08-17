@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --needed --noconfirm kitty zsh git-delta
+yay -S --needed --noconfirm kitty zsh git-delta less
 
 chsh -s $(which zsh)
 
