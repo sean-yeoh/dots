@@ -1,4 +1,4 @@
-yay -S --needed --noconfirm asdf-vm openssl zlib xz tk python gcc make /
+yay -S --needed --noconfirm asdf-vm openssl zlib xz tk python gcc make \
 python-pip rust libffi libyaml
 
 source ~/.zshrc
