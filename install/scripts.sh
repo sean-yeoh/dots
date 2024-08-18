@@ -1,0 +1,1 @@
+sudo cp ./scripts/flameshot-workaround /usr/local/bin
