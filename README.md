@@ -112,7 +112,8 @@ timedatectl set-ntp true # start time synchronization service
 ```
 
 ### 16. Brightness not working (optional)
-Add `acpi_backlight=native` to kernel parameter.
+Edit `/etc/default/grub` and append `acpi_backlight=native` between the quotes in the `GRUB_CMDLINE_LINUX_DEFAULT` line.
+Regenerate `grub.cfg` with `grub-mkconfig -o /boot/grub/grub.cfg`.
 
 # References
 - https://wiki.archlinux.org/title/Backlight
