@@ -11,9 +11,9 @@ fc-cache
 
 gtk-update-icon-cache ~/.local/share/icons/${ICON_THEME}
 
-cp ./assets/wallpapers/${WALL_PAPER_FILENAME} ~/.local/share/backgrounds/
-
 mkdir -p ~/.local/share/backgrounds/
+
+cp ./assets/wallpapers/${WALL_PAPER_FILENAME} ~/.local/share/backgrounds/
 
 gsettings set org.gnome.desktop.background picture-uri $HOME/.local/share/backgrounds/${WALL_PAPER_FILENAME}
 gsettings set org.gnome.desktop.background picture-uri-dark $HOME/.local/share/backgrounds/${WALL_PAPER_FILENAME}
