@@ -13,11 +13,15 @@ gsettings set org.gnome.mutter workspaces-only-on-primary true
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.session idle-delay 'uint32 900'
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'suspend'
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'suspend'
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 3600
 gsettings set org.gnome.desktop.interface clock-format '12h'
 gsettings set org.gtk.Settings.FileChooser clock-format '12h'
 gsettings set org.gtk.gtk4.Settings.FileChooser clock-format '12h'
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.datetime automatic-timezone true
+gsettings set org.gnome.desktop.privacy remember-recent-files false
 
 gsettings set org.gnome.mutter center-new-windows true
 
