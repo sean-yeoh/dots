@@ -6,10 +6,12 @@ gext install dash-to-panel@jderose9.github.com
 gext install AlphabeticalAppGrid@stuarthayhurst
 gext install appindicatorsupport@rgcjonas.gmail.com
 gext install grand-theft-focus@zalckos.github.com
+gext install focus-changer@heartmire
 
 sudo cp ~/.local/share/gnome-shell/extensions/dash-to-panel\@jderose9.github.com/schemas/org.gnome.shell.extensions.dash-to-panel.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/AlphabeticalAppGrid\@stuarthayhurst/schemas/org.gnome.shell.extensions.AlphabeticalAppGrid.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/space-bar\@luchrioh/schemas/org.gnome.shell.extensions.space-bar.gschema.xml /usr/share/glib-2.0/schemas/
+sudo cp ~/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas/org.gnome.shell.focus-changer.gschema.xml /usr/share/glib-2.0/schemas/
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 gsettings set org.gnome.shell.extensions.space-bar.behavior toggle-overview false
@@ -30,3 +32,7 @@ gsettings set org.gnome.shell.extensions.dash-to-panel focus-highlight true
 gsettings set org.gnome.shell.extensions.dash-to-panel panel-element-positions '{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"centered"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
 gsettings set org.gnome.shell.extensions.dash-to-panel isolate-monitors true
 
+gsettings set org.gnome.shell.extensions.focus-changer focus-up "['<Super><Alt>Up']"
+gsettings set org.gnome.shell.extensions.focus-changer focus-down "['<Super><Alt>Down']"
+gsettings set org.gnome.shell.extensions.focus-changer focus-left "['<Super><Alt>Left']"
+gsettings set org.gnome.shell.extensions.focus-changer focus-right "['<Super><Alt>Right']"
