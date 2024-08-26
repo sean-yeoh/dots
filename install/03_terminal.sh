@@ -10,3 +10,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 
 mkdir -p ~/.local/share/fonts
 cp ./assets/fonts/* ~/.local/share/fonts/
+
+mkdir -p ~/.config/kitty
+cp -r ./config/kitty ~/.config/
+cp ./config/.p10k.zsh ~/
+cp ./config/.zshrc ~/
