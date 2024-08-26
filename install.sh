@@ -1,14 +1,5 @@
-cp ./config/.gitconfig ~/
-
-./install/desktop.sh
-./install/yay.sh
-./install/theme.sh
-./install/terminal.sh
-./install/packages.sh
-./install/gsettings.sh
-./install/gnome_extensions.sh
-./install/east_asian_fonts.sh
-./install/config.sh
+./install/01_config.sh
+./install/02_yay.sh
+./install/03_terminal.sh
 # ./install/asdf.sh
 
-chsh -s $(which zsh)
