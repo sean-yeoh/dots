@@ -3,7 +3,7 @@ sudo yay -S --needed --noconfirm hyprland brightnessctl gtk-engine-murrine
 mkdir -p ~/.local/share/themes
 mkdir -p ~/.local/share/icons
 cp -r ./assets/Material-Black-Mango ~/.local/share/themes
-cp -r ./assets/Reversal-dark ~/.local/share/icons
+cp -r ./assets/Material-Black-Mango-Suru ~/.local/share/icons
 
 xdg-user-dirs-update
 
