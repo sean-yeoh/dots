@@ -1,14 +1,19 @@
-sudo yay -S --needed --noconfirm hyprland brightnessctl gtk-engine-murrine
+yay -S --needed --noconfirm hyprland brightnessctl gtk-engine-murrine \
+  sddm dunst pipewire wireplumber xdg-desktop-portal-hyprland polkit-gnome \
+  qt5-wayland qt6-wayland gnome-keyring libsecret nvidia nvidia-utils egl-wayland
 
-mkdir -p ~/.local/share/themes
-mkdir -p ~/.local/share/icons
-cp -r ./assets/Material-Black-Mango ~/.local/share/themes
-cp -r ./assets/Reversal-dark ~/.local/share/icons
-cp -r ./assets/Reversal ~/.local/share/icons
+sudo systemctl enable sddm.service
 
-xdg-user-dirs-update
+# mkdir -p ~/.local/share/themes
+# mkdir -p ~/.local/share/icons
+# cp -r ./assets/Material-Black-Mango ~/.local/share/themes
+# cp -r ./assets/Reversal-dark ~/.local/share/icons
+# cp -r ./assets/Reversal ~/.local/share/icons
 
-yay -S --needed --noconfirm nemo nemo-fileroller nemo-preview xdg-user-dirs
+# xdg-user-dirs-update
 
-gtk-update-icon-cache ~/.local/share/icons/Reversal
-gtk-update-icon-cache ~/.local/share/icons/Reversal-dark
+# yay -S --needed --noconfirm nemo nemo-fileroller nemo-preview xdg-user-dirs
+
+# gtk-update-icon-cache ~/.local/share/icons/Reversal
+# gtk-update-icon-cache ~/.local/share/icons/Reversal-dark
+
