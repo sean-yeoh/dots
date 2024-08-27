@@ -9,11 +9,14 @@ sudo systemctl enable sddm.service
 # cp -r ./assets/Material-Black-Mango ~/.local/share/themes
 # cp -r ./assets/Reversal-dark ~/.local/share/icons
 # cp -r ./assets/Reversal ~/.local/share/icons
+cp -r ./assets/Bibata-Modern-Ice ~/.local/share/icons
+cp -r ./assets/Bibata-Modern-Ice-Hyprcursor ~/.local/share/icons
 
 # xdg-user-dirs-update
 
 # yay -S --needed --noconfirm nemo nemo-fileroller nemo-preview xdg-user-dirs
 
 # gtk-update-icon-cache ~/.local/share/icons/Reversal
-# gtk-update-icon-cache ~/.local/share/icons/Reversal-dark
+# gtk-update-icon-cache ~/.local/share/icons/Reversal
+gtk-update-icon-cache ~/.local/share/icons/Bibata-Modern-Ice
 
