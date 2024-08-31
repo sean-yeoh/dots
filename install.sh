@@ -1,5 +1,7 @@
-./install/01_config.sh
-./install/02_yay.sh
-./install/03_terminal.sh
+./install/01_yay.sh
+./install/02_terminal.sh
+./install/03_desktop.sh
+./install/04_apps.sh
+./install/05_fonts.sh
 
 chsh -s $(which zsh)

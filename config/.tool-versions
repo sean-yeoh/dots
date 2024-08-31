@@ -3,5 +3,5 @@ nodejs 18.16.1
 ruby 3.3.4
 #erlang 26.0.2
 #elixir 1.16.1
-python 3.11.6
+#python 3.11.6
 pnpm 8.6.7

@@ -115,5 +115,11 @@ timedatectl set-ntp true # start time synchronization service
 Edit `/etc/default/grub` and append `acpi_backlight=native` between the quotes in the `GRUB_CMDLINE_LINUX_DEFAULT` line.
 Regenerate `grub.cfg` with `grub-mkconfig -o /boot/grub/grub.cfg`.
 
+### 17. Download gitconfig
+```shell
+sudo systemctl enable --now reflector.service
+curl https://raw.githubusercontent.com/sean-yeoh/dots/main/config/.gitconfig -o ~/
+```
+
 # References
 - https://wiki.archlinux.org/title/Backlight
