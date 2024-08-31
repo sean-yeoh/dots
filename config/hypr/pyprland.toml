@@ -1,0 +1,11 @@
+[pyprland]
+plugins = [
+  "scratchpads"
+]
+
+[scratchpads.terminal]
+animation = "fromTop"
+command = "kitty --class scratchpad"
+class = "scratchpad"
+lazy = true
+size = "75% 45%"

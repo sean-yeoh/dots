@@ -1,0 +1,145 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top", // Waybar at top layer
+  "margin-top": 8,
+  "margin-left": 20,
+  "margin-right": 20,
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  "height": 36, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 4, // Gaps between modules (4px)
+  // Choose the order of the modules
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/media"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "group/motherboard",
+    "group/info",
+    "clock",
+    "tray"
+  ],
+  "group/motherboard": {
+    "orientation": "horizontal",
+    "modules": [
+      "cpu",
+      "memory",
+      "disk"
+      // "temperature"
+    ]	
+  },
+  "group/info": {
+    "orientation": "horizontal",
+    "modules": [
+      "bluetooth",
+      "pulseaudio",
+      "battery"
+    ]	
+  },
+  // Modules configuration
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "persistent-workspaces": {
+      "*": 5
+    },
+    "all-outputs": false,
+    "warp-on-scroll": false,
+    "format": ""
+  },
+  "hyprland/window": {
+    "separate-outputs": true,
+    "format": "{title}",
+    "icon": true,
+    "icon-size": 20,
+    "max-length": 30
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{bandwidthUpBytes} 󰕒 {bandwidthDownBytes} 󰇚",
+    "format-ethernet": "{bandwidthUpBytes} {bandwidthDownBytes}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) 󰖩",
+    "format-disconnected": "Disconnected 󰤭",
+  },
+  "bluetooth": {
+    "format": "󰂯 {status}",
+    "on-click": "blueberry",
+    "format-connected": " {device_alias}",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}󰂯",
+    "format-bluetooth-muted": "󰝟 {icon}󰂯",
+    "format-muted": "󰝟 {format_source}",
+    "format-icons": {
+      "headphone": "󰋋",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "pwvucontrol"
+  },
+  "cpu": {
+    "format": "{usage}% 󰻠",
+    "tooltip": true
+  },
+  "memory": {
+    "format": "{}% 󰍛",
+    "tooltip": true
+  },
+  "disk": {
+    "interval": 30,
+    "format": "{percentage_used}% 󰨣",
+    "tooltip": true,
+    "tooltip-format": "{specific_free:0.2f} GB out of {specific_total:0.2f} GB available.",
+    "unit": "GB"
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{temperatureC}°C 󰔏"
+  },
+  "clock": {
+    // "format": "{%a}",
+    "format": "{:%a, %d %b, %I:%M%p}",
+    "tooltip": false
+  },
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% 󰂄",
+    "format-alt": "{time} {icon}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂁", "󰁹"]
+  },
+  "battery#bat2": {
+    "bat": "BAT2"
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 16
+  },
+  "custom/media": {
+    "format": "{icon} {}",
+    "return-type": "json",
+    "max-length": 40,
+    "format-icons": {
+        "spotify": "",
+        "default": "🎜"
+    },
+    "escape": true,
+    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+  }
+}

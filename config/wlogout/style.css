@@ -1,0 +1,54 @@
+@import '../theme.css';
+
+window {
+  font-family: MesloLGS Nerd Font;
+  font-size: 16pt;
+  color: @foreground; /* text */
+  background-color: rgba(24, 27, 32, 0.2);
+}
+
+button {
+  background-repeat: no-repeat;
+  background-position: center;
+  color: @foreground; /* text */
+  background-size: 20%;
+  background-color: transparent;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.1s ease-in;
+  box-shadow: 0 0 10px 2px transparent;
+  border-radius: 36px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  border: 2px solid transparent;
+}
+
+button:hover,
+button:focus {
+  background-size: 30%;
+  background-color: @background_2;
+  color: transparent;
+}
+
+button:focus {
+  border: 2px solid @foreground;
+}
+
+#shutdown {
+  background-image: image(url('./icons/power.png'));
+}
+
+#logout {
+  background-image: image(url('./icons/logout.png'));
+}
+
+#reboot {
+  background-image: image(url('./icons/restart.png'));
+}
+
+#lock {
+  background-image: image(url('./icons/lock.png'));
+}
+
+#hibernate {
+  background-image: image(url('./icons/hibernate.png'));
+}
