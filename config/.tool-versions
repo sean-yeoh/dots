@@ -1,7 +1,8 @@
-nodejs 18.16.1
 #java openjdk-17
-ruby 3.3.4
 #erlang 26.0.2
 #elixir 1.16.1
 #python 3.11.6
-pnpm 8.6.7
+pnpm 9.1.4
+nodejs 20.15.0
+direnv 2.32.2
+ruby 3.3.4

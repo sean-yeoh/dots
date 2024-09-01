@@ -1,5 +1,6 @@
 yay -S --needed --noconfirm plasma-meta kde-graphics-meta kde-system-meta kde-utilities-meta
 sudo systemctl enable sddm.service
+sudo systemctl enable bluetooth
 
 # mkdir -p ~/.local/share/themes
 # mkdir -p ~/.local/share/icons
