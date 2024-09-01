@@ -1,9 +1,5 @@
 yay -S --needed --noconfirm plasma-meta kde-graphics-meta kde-system-meta kde-utilities-meta
-
-  
-
-# sudo systemctl enable sddm.service
-# sudo systemctl enable --now swayosd-libinput-backend.service
+sudo systemctl enable sddm.service
 
 # mkdir -p ~/.local/share/themes
 # mkdir -p ~/.local/share/icons
