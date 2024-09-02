@@ -118,8 +118,11 @@ Regenerate `grub.cfg` with `grub-mkconfig -o /boot/grub/grub.cfg`.
 ### 17. Download gitconfig
 ```shell
 sudo systemctl enable --now reflector.service
-curl https://raw.githubusercontent.com/sean-yeoh/dots/main/config/.gitconfig -o ~/
+curl https://raw.githubusercontent`.com/sean-yeoh/dots/main/config/.gitconfig -o ~/
 ```
+
+### 18. Fcitx5
+https://wiki.archlinux.org/title/Fcitx5
 
 # References
 - https://wiki.archlinux.org/title/Backlight
